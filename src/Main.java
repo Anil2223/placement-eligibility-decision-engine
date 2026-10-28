@@ -10,10 +10,17 @@ class Main {
         int backlogs = scanner.nextInt();
         int graduationYear = scanner.nextInt();
 
-        System.out.println("Candidate: " + name);
-        System.out.println("Percentage: " + percentage);
-        System.out.println("Backlogs: " + backlogs);
-        System.out.println("Graduation Year: " + graduationYear);
+        // System.out.println("Candidate: " + name);
+        // System.out.println("Percentage: " + percentage);
+        // System.out.println("Backlogs: " + backlogs);
+        // System.out.println("Graduation Year: " + graduationYear);
+
+        Condidate condidate = new Condidate(name, percentage, backlogs, graduationYear);
+
+        System.out.println("Condidate :" + condidate.getName());
+        System.out.println("Percentage: " + condidate.getPercentage());
+        System.out.println("Backlogs:" + condidate.getBacklogs());
+        System.out.println("Graduation Year :" + condidate.getGraduationYear());
 
         scanner.close();
 
